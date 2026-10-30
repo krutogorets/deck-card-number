@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+  SPDX-FileCopyrightText: 2026 Nikita <it@aniops.by>
+  SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>deckcardnumber</id>
+	<name>Deck Card Numbers</name>
+	<summary>Prefix new Deck cards with #&lt;id&gt;</summary>
+	<description>Renames a Deck card right after creation so that its title starts with #&lt;card id&gt; - the same number as in /apps/deck/board/&lt;boardId&gt;/card/&lt;id&gt;. Works for the web UI, mobile apps and the REST API, because it hooks Deck's CardCreatedEvent.</description>
+	<version>1.0.0</version>
+	<licence>agpl</licence>
+	<author mail="it@aniops.by" homepage="https://github.com/krutogorets">Nikita</author>
+	<namespace>DeckCardNumber</namespace>
+	<category>organization</category>
+	<website>https://github.com/krutogorets/deck-card-number</website>
+	<bugs>https://github.com/krutogorets/deck-card-number/issues</bugs>
+	<repository type="git">https://github.com/krutogorets/deck-card-number.git</repository>
+	<dependencies>
+		<nextcloud min-version="28" max-version="36"/>
+	</dependencies>
+</info>
